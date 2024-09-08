@@ -1,0 +1,4 @@
+<template>
+    <Maineditor />
+     <!-- <Neweditor /> -->
+</template>
