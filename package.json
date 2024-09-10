@@ -10,18 +10,27 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@radix-icons/vue": "^1.0.0",
     "@tiptap/extension-floating-menu": "^2.6.6",
     "@tiptap/pm": "^2.6.6",
     "@tiptap/starter-kit": "^2.6.6",
     "@tiptap/suggestion": "^2.6.6",
     "@tiptap/vue-3": "^2.6.6",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "nuxt": "^3.13.0",
+    "radix-vue": "^1.9.5",
+    "shadcn-nuxt": "^0.10.4",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
     "tippy.js": "^6.3.7",
     "vue": "latest",
     "vue-router": "latest"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "devDependencies": {
-    "sass-embedded": "^1.78.0"
+    "sass-embedded": "^1.78.0",
+    "typescript": "^5.6.2"
   }
 }
