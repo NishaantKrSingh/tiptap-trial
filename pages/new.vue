@@ -16,6 +16,11 @@ const editor = ref(null)
 
 onMounted(() => {
   editor.value = new Editor({
+    editorProps: {
+    attributes: {
+      class: 'prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none',
+    },
+  },
     extensions: [
       StarterKit,
       useCommands().configure({

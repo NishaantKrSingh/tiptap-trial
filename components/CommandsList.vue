@@ -1,14 +1,16 @@
 <template>
   <div class="dropdown-menu">
     <template v-if="items.length">
-      <button
+      <Button
+        variant = "secondary"
+        class = "bg-grey"
         :class="{ 'is-selected': index === selectedIndex }"
         v-for="(item, index) in items"
         :key="index"
         @click="selectItem(index)"
       >
         {{ item.title }}
-      </button>
+      </Button>
     </template>
     <div class="item" v-else>
       No result
@@ -87,34 +89,16 @@ export default {
 
 <style lang="scss">
 /* Dropdown menu */
-.dropdown-menu {
-  background: var(--white);
-  border: 1px solid var(--gray-1);
-  border-radius: 0.7rem;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  overflow: auto;
-  padding: 0.4rem;
-  position: relative;
-
-  button {
-    align-items: center;
-    background-color: transparent;
-    display: flex;
-    gap: 0.25rem;
-    text-align: left;
-    width: 100%;
-
-    &:hover,
-    &:hover.is-selected {
-      background-color: var(--gray-3);
-    }
-
-    &.is-selected {
-      background-color: var(--gray-2);
-    }
-  }
-}
+// .dropdown-menu {
+//   background: var(--white);
+//   border: 1px solid var(--gray-1);
+//   border-radius: 0.7rem;
+//   box-shadow: var(--shadow);
+//   display: flex;
+//   flex-direction: column;
+//   gap: 0.1rem;
+//   overflow: auto;
+//   padding: 0.4rem;
+//   position: relative;
+// }
 </style>
